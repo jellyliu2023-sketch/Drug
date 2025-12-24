@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>See it? Secure it! | MedReturn 上海</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #map {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>See it? Secure it!</h1>
+    <p class="subtitle">
+      过期药物请不要随意丢弃 — 使用 MedReturn 安全回收。
+    </p>
+
+    <div class="hero-image">
+      <img src="images/expired-pill.png" alt="Expired pill bottle">
+      <span class="checkmark">✔</span>
+      <img src="images/medreturn-box.png" alt="MedReturn box">
+    </div>
+  </header>
+
+  <!-- WHY IT MATTERS -->
+  <section class="section">
+    <h2>为什么正确处理药物很重要</h2>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>70%</h3>
+        <p>家庭储存过期或未用药物的比例</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>⚠</h3>
+        <p>不当处理会污染水系统</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>
+          <img src="images/baby.png" alt="儿童中毒风险" class="stat-icon">
+        </h3>
+        <p>增加儿童和老年人中毒风险</p>
+</div>
+    </div>
+  </section>
+
+  <!-- WHAT IS MEDRETURN -->
+  <section class="section light">
+    <h2>什么是 MedReturn</h2>
+
+    <p class="text">
+      MedReturn 是一种安全的药物回收箱，放置在合作药店和社区诊所。
+      它允许居民安全丢弃过期或未用药物，保护家庭、社区和环境。
+    </p>
+
+    <ol class="steps">
+      <li>检查药品是否过期</li>
+      <li>将过期药物带到合作药店</li>
+      <li>投入 MedReturn 回收箱</li>
+    </ol>
+  </section>
+
+  <!-- INTERACTIVE MAP -->
+  <section class="section">
+    <h2>查找附近 MedReturn 回收箱（上海）</h2>
+    <p class="text">点击标记查看药店信息</p>
+    <div id="map"></div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <footer class="footer">
+    <h2>看到过期药 — 请安全回收</h2>
+    <p>让我们共同减少药物浪费，保护公共健康。</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
